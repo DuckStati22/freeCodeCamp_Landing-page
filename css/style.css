@@ -1,0 +1,256 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0 1.25em;
+    background-color: #f1c40f;
+}
+
+.header__logo {
+    width: 300px;
+}
+
+.header__logo > img {
+    width: 100%;
+}
+
+.header__nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+}
+
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.hero-secion__title {
+    margin-bottom: 0.833333em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+.hero-section__form {
+    text-align: center;
+}
+
+.hero-section__form > input[type='email'] {
+    width: 100%;
+    max-width: 275px;
+    padding: 0.3125em;
+    border: 1px solid black;
+}
+
+.button {
+    width: 100%;
+    max-width: 150px;
+    height: 30px;
+    margin-top: 0.9375em;
+    background-color: #f1c40f;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.features-section {
+    padding-top: 95px;
+}
+
+.features-section__row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.125em;
+}
+
+.features-section__row:last-child {
+    margin-bottom: 0;
+}
+
+.features-section__icon {
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+i {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.features-section__decription {
+    flex: 0 0 50%;
+    padding-left: 4em;
+}
+
+.features-section__decription > h2 {
+    margin-bottom: 0.625em;
+}
+
+
+.icon_first {
+    background: url(../img/icons/hot-deal.png);
+}
+
+.icon_second {
+    background: url(../img/icons/truck.png);
+}
+
+.icon_third {
+    background: url(../img/icons/full-battery.png);
+}
+
+.video-section {
+    text-align: center;
+    padding-top: 6em;
+}
+
+#video {
+    max-width: 560px;
+    width: 100%;
+}
+
+
+.pricing-section {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-section__product {
+    flex: 0 0 25%;
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.625em;
+    border: 1px solid #000;
+}
+
+.pricing-section__product > h2, .pricing-section__product > ul > li {
+    margin: 0.625em 0;
+}
+
+.pricing-section__product > ul {
+    text-align: center;
+}
+
+.level {
+    background-color: #ddd;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.footer {
+    background-color: #ddd;
+    padding: 1.25em 0;
+}
+
+.footer > div > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer > div > ul > li {
+    padding-left: 0.625em;
+}
+
+.footer > div > span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.3125em;
+}
+
+
+
+
+@media screen and (max-width: 651px) {
+    .header__nav > ul {
+        display: block;
+        text-align: center;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .pricing-section__product {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 1.25em;
+    }
+
+    .pricing-section__product:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__nav {
+        flex: 0 0 100%;
+        margin: 5px 0;
+    }
+
+    .header__nav>ul {
+        margin: 0 auto;
+    }
+
+    .hero-section {
+        padding-top: 110px;
+    }
+
+    .features-section__row {
+        display: block;
+    }
+
+    .features-section__decription {
+        padding: 0;
+        text-align: center;
+    }
+
+    i {
+        display: none;
+    }
+}
+
